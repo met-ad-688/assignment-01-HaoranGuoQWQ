@@ -1,4 +1,5 @@
 #!/bin/bash
-count=$(grep -i "python"  inflating: question_tags.csv | wc -l)
-echo "Number of lines containing 'python' in CSV files: $count"
 
+DATASET_DIR="/home/ubuntu/assignment-01-HaoranGuoQWQ"
+
+grep -i "python" $DATASET_DIR/*.csv | wc -l
